@@ -1,6 +1,6 @@
 {
   "include": ["./src"],
-  "exclude": ["./src/**/*.test.ts", "./src/**/*.spec.ts", "./src/components/ui"],
+  "exclude": ["./src/**/*.test.ts", "./src/**/*.spec.ts", "./src/components/ui", "node_modules"],
   "compilerOptions": {
     "jsx": "react-jsx",
     "moduleResolution": "bundler",
@@ -11,8 +11,7 @@
     "skipLibCheck": true,
     "noEmit": true,
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/components/*"]
     }
   }
 }
-8
