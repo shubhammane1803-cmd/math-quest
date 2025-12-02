@@ -2,7 +2,6 @@
 set -e
 
 echo "Installing dependencies..."
-cd "math quest"
 npm install
 
 echo "Building application..."
