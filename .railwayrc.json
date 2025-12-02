@@ -1,0 +1,4 @@
+{
+  "detectors": ["nodejs"],
+  "builder": "nixpacks"
+}
