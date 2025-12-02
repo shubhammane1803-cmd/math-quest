@@ -2,7 +2,7 @@
  * Sample Page
  */
 
-import PageMeta from "../components/common/PageMeta";
+import PageMeta from "../common/PageMeta";
 
 export default function SamplePage() {
   return (

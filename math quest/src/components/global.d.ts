@@ -1,1 +1,1 @@
-/ global types
+// global types
