@@ -1,0 +1,13 @@
+pnpm-lock.yaml
+pnpm-workspace.yaml
+.git
+.gitignore
+README.md
+TODO.md
+DEPLOYMENT.md
+docs/
+rules/
+.env.local
+.env.*.local
+*.log
+node_modules/.cache
