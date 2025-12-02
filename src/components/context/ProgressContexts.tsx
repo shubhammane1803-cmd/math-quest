@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect, type ReactNode } from 'react';
+import { createContext, useContext, useState, useEffect, type ReactNode } from 'react';
 import type { PlayerProgress, Badge } from '@/types/game';
 import { getPlayerProgress, savePlayerProgress } from '@/utils/storage';
 import { shouldUnlockBadge } from '@/utils/gameLogic';

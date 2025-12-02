@@ -130,7 +130,7 @@ const contextValue = useMemo<MapContextProps>(
 const initMap = useCallback(() => {
     if (!mapRef.current) return;
 
-    let map = currentRef.current;
+    let map: any = currentRef.current;
 
     if (!map) {
     // Create map instance
@@ -139,7 +139,7 @@ const initMap = useCallback(() => {
     }
 
     // Clear overlays
-    map.clearOverlays();
+    map?.clearOverlays();
 
     // Set map center coordinates and map level
     const center = new (window as any).BMapGL.Point(
@@ -147,11 +147,11 @@ const initMap = useCallback(() => {
     _options?.lat
     );
 
-    map.centerAndZoom(center, _options?.zoom);
+    map?.centerAndZoom(center, _options?.zoom);
 
     // Add marker
     const marker = new (window as any).BMapGL.Marker(center);
-    map.addOverlay(marker);
+    map?.addOverlay(marker);
 }, [_options]);
 
 useEffect(() => {
