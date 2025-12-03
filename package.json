@@ -6,7 +6,8 @@
     "dev": "vite dev --config vite.config.dev.ts",
     "build": "vite build",
     "lint": "tsgo -p tsconfig.check.json",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "npm run build && npm run preview -- --host 0.0.0.0 --port ${PORT:-5173}"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
