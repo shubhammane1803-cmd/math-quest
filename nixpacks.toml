@@ -1,0 +1,5 @@
+[build]
+nixpkgs = ["nodejs_20"]
+
+[start]
+cmd = "npm run build && npm run preview -- --host 0.0.0.0 --port $PORT"
